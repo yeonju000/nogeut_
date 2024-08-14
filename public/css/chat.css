@@ -1,0 +1,374 @@
+.chat__container {
+    display: flex;
+    width: 1000px;
+    height: 850px;
+    margin: auto;
+    background: rgba(247, 247, 247, 1);
+}
+
+.chat__room__list {
+    width: 300px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat__title {
+    color: #2D6210;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.chat__room__list__line {
+    background-color: #E1EFD7;
+    height: 20px;
+}
+.settings__menu__item a:hover {
+    color: #2D6210;
+    text-decoration: none;
+}
+
+.chat__room__item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.chat__room__profle {
+    margin-right: 10px;
+}
+
+.chat__profile__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat__room__info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.chat__other-user {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chat__other-user span:first-child {
+    font-size: 16px;
+}
+
+.chat__other-user span:last-child {
+    font-size: 12px;
+}
+
+.chat__last__message {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chat_last__message__time {
+    margin-right: 5px;
+}
+
+.chat__last__message span:first-child {
+    font-size: 12px;
+}
+
+.inChatRoom {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.other-user {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E1EFD7;
+    padding: 15px;
+    position: relative;
+}
+
+.chat__room__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #2D6210;
+}
+
+.settings__button {
+    font-size: 20px;
+    color: #2D6210;
+    font-weight: bold;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.settings__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #E1EFD7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #E1EFD7;
+}
+
+.settings__menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.settings__menu__item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*
+ul li a:hover {
+    color: #2D6210;
+}
+*/
+.settings__menu__item:hover {
+    color: #2D6210;
+}
+
+.chat__message {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chatting__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sent__container {
+    padding: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.received__container {
+    padding: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.sent__message__content {
+    background: white;
+    border-radius: 10px 10px 0px 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.sent__message__time {
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+.received__message__content {
+    background: white;
+    border: 2px solid #E1EFD7;
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.received__message__time {
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+.input__message {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 10px;
+    border-top: 1px solid #E1EFD7;
+}
+
+.input__message-span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+}
+
+.chatting__input {
+    flex: 8;
+    padding: 10px;
+    border: 1px solid #E1EFD7;
+    border-radius: 5px;
+}
+
+.send__button {
+    padding: 10px;
+    flex: 1;
+    width: 100px;
+    margin-left: 10px;
+    border: none;
+    background-color: #E1EFD7;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promise__modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 3px solid #E1EFD7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
+    padding: 20px;
+}
+
+.promise__modal__title {
+    color: #2D6210;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E1EFD7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.close__btn {
+    cursor: pointer;
+    color: #E1EFD7;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.close__btn:hover {
+    color: #2D6210;
+}
+
+.modal__content {
+    margin-bottom: 10px;
+}
+
+.modal__footer {
+    text-align: right;
+}
+
+.promise__button {
+    width: 70px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #E1EFD7;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promise__button:hover {
+    color: #2D6210;
+    border: 1px solid #2D6210;
+}
+
+/* Custom Alert �ㅽ��� */
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(45, 98, 16, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000;
+    /* Ensure it's above other elements */
+}
+
+.hidden {
+    display: none;
+}
+
+.alert-content {
+    text-align: center;
+}
+
+.student {
+    border: 2px solid #E1EFD7;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.promise__info {
+    color: #2D6210;
+    font-weight: bold;
+}
+
+.button__box {
+    text-align: center;
+}
+
+.deposit__button {
+    color: #2D6210;
+    border: 1px solid #E1EFD7;
+    width: 70px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 10px;
+}
+
+.deposit__button:hover {
+    color: #2D6210;
+    background-color: #E1EFD7;
+}
+
+.protector {
+    border: 2px solid #E1EFD7;
+    border-radius: 10px 10px 10px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.promise__comment {
+    display: flex;
+    justify-content: space-between;
+}
+.time__box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deposit__status {
+    color: #2D6210;
+    font-size: 12px;
+}
+
+.account__button {
+    color: #2D6210;
+    border: 1px solid #E1EFD7;
+    width: 130px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
