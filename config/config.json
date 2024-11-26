@@ -3,21 +3,21 @@
     "username": "ju",
     "password": "password",
     "database": "nogeut_db",
-    "host": "34.64.92.12",
+    "host": "34.47.103.166",
     "dialect": "mysql"
   },
   "test": {
     "username": "ju",
     "password": "password",
     "database": "nogeut_db",
-    "host": "34.64.92.12",
+    "host": "34.47.103.166",
     "dialect": "mysql"
   },
   "production": {
     "username": "ju",
     "password": "password",
     "database": "nogeut_db",
-    "host": "34.64.92.12",
+    "host": "34.47.103.166",
     "dialect": "mysql"
   }
 }
